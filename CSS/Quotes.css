@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #3f3e3f;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#navbar {
+    display: flex;
+    background-color: #FF2E63;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100vw;
+    height: 4em;
+}
+
+#logo {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    left: 1rem;
+    border-radius: 50%;
+    background-image: url("/Images/335dc646c4ada0298c041177d736598c.png");
+    background-size: cover;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+}
+
+.item::before {
+    content: "";
+    background-color: rgb(0, 84, 25);
+    width: 6rem;
+    height: .3rem;
+    position: absolute;
+    top: 1rem;
+    border-radius: 5rem 5rem;
+    transform: scaleX(0);
+    transition: transform .1s ease-out;
+    box-shadow: 0.5rem 1.75rem rgb(113, 0, 62);
+}
+
+.item:hover::before {
+    transform: scaleX(1);
+}
+
+#item1 {
+    font-size: 2rem;
+    position: relative;
+    font-weight: bold;
+    right: 10vw;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #ffffff;
+    transition: all .25s ease-in-out;
+
+}
+
+#item1:hover {
+    text-shadow: 0rem 0rem .5rem rgb(208, 255, 0);
+    color: yellow;
+}
+
+#item2 {
+    color: #CCF2F4;
+    text-shadow: 0px 0px 2px#F1F6F9;
+
+}
+
+#item3 {
+    color: #CCF2F4;
+    text-shadow: 0px 0px 2px#F1F6F9;
+}
+
+#item4 {
+    color: #CCF2F4;
+    text-shadow: 0px 0px 2px#F1F6F9;
+}
+
+#list {
+    display: flex;
+    list-style: none;
+    width: 50vw;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-evenly;
+
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card>.row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card>.row>.icon {
+    background-color: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: -1rem;
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card>.row>.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description .p {
+    display: block;
+    -webkit-text-stroke: .8px rgb(255, 79, 79);
+    color: #ff8800;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding-top: 5px;
+    transform: translateY(-10rem);
+    font-weight: 300;
+    display: none;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    transition: transform .5s ease-out;
+}
+
+.description .p1 {
+    display: block;
+    transform: translateY(0);
+}
+
+.description h4 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    width: 600px;
+}
+
+input:checked+label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('/Images/naruto-concept-art-chromebook-wallpaper.jpg');
+}
+
+.card[for="c2"] {
+    background-image: url('/Images/desktop-wallpaper-madara-uchiha-susanoo-madara-perfect-susanoo.jpg');
+}
+
+.card[for="c3"] {
+    background-image: url('/Images/wp2608922.webp');
+}
+
+.card[for="c4"] {
+    background-image: url('/Images/hatake-kakashi-naruto-anime-4k_1664120799.jpg');
+}
+
+.card[for="c5"] {
+    background-image: url('/Images/unnamed.jpg');
+}
+
+.card[for="c6"] {
+    background-image: url('/Images/itachi_uchiha_4k_hd_naruto.jpg');
+}
+
+.card[for="c7"] {
+    background-image: url('/Images/0c9d117e2ecac0459cd08c6dcf577de2.jpg');
+}
+
+.card[for="c8"] {
+    background-image: url('/Images/nagato-pain-naruto-4k-pc-k9mgbclqtbcggpau.jpg');
+}

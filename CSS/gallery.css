@@ -1,0 +1,254 @@
+:root {
+    --def-tranition-duration: .2s;
+}
+
+body {
+    background-color: #222831;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #FF2E63;
+    position: fixed;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    top: 0;
+    width: 100vw;
+    height: 4em;
+    z-index: 5;
+}
+
+#logo {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    left: 1rem;
+    border-radius: 50%;
+    background-image: url("/Images/335dc646c4ada0298c041177d736598c.png");
+    background-size: cover;
+}
+
+#logo:hover {
+    cursor: pointer;
+    height: 6rem;
+    width: 6rem;
+    transition-property: height, width;
+}
+
+#item1 {
+    font-size: 2rem;
+    position: relative;
+    font-weight: bold;
+    right: 10vw;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #ffffff;
+    text-shadow: 2px 2px blue;
+}
+
+#item1:hover {
+    font-size: 2.35rem;
+    transition-property: font-size;
+}
+
+#item2:hover,
+#item3:hover,
+#item4:hover {
+    font-size: 1.25rem;
+    transition-property: font-size;
+}
+
+#item2 {
+    color: #CCF2F4;
+    text-shadow: 1px 1px rgb(0, 0, 255);
+
+
+}
+
+#item3 {
+    color: #CCF2F4;
+    text-shadow: 1px 1px rgb(0, 0, 255);
+
+}
+
+#item4 {
+    color: #CCF2F4;
+    /* text-shadow: 0px 0px 2px#F1F6F9; */
+    text-shadow: 1px 1px rgb(0, 0, 255);
+}
+
+#list {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    width: 50vw;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-evenly;
+
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: white;
+    overflow: hidden;
+    -webkit-overflow-scrolling: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(rgba(0, 0, 0, 0.9) 9%, black 9%);
+    background-size: 30px 30px;
+}
+
+.wrapper {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s ease;
+}
+
+.wrapper:active {
+    transform: scale(.85) translate(-50%, -50%);
+}
+
+.wrapper:active img {
+    transform: scale(1.1);
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center h1 {
+    font-size: 9rem;
+    margin: 0;
+    background-image: linear-gradient(45deg, magenta 25%, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transform: scale(0);
+    animation: fadeIn .6s ease;
+    animation-fill-mode: forwards;
+}
+
+.center h1::after {
+    content: "";
+    background-color: rgb(255, 213, 0);
+    position: absolute;
+    bottom: 10%;
+    left: 2.5%;
+    width: 95%;
+    height: .5rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+
+}
+
+.center h2 {
+    font-size: 3rem;
+    margin-top: -1rem;
+    transform: scale(0);
+    animation: fadeIn .6s ease;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+}
+
+.images {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.column {
+    margin: 0 30px;
+    margin-top: 7vh;
+}
+
+.column:nth-child(odd) {
+    margin-top: -7vh;
+}
+
+.image {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 5vh 0;
+    transform: scale(0);
+    transition: transform .8s ease;
+    animation: fadeIn .8s ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image:nth-child(odd) {
+    animation-delay: 1.2s;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.5);
+    pointer-events: none;
+    transition: all .6s ease;
+}
+
+.image:hover>img {
+    transform: scale(1);
+}
+
+.space {
+    height: 500px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
