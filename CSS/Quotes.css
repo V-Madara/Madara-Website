@@ -31,7 +31,7 @@ body {
     width: 5rem;
     left: 1rem;
     border-radius: 50%;
-    background-image: url("/Images/335dc646c4ada0298c041177d736598c.png");
+    background-image: url("../Images/335dc646c4ada0298c041177d736598c.png");
     background-size: cover;
 }
 
@@ -214,33 +214,33 @@ input:checked+label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('/Images/naruto-concept-art-chromebook-wallpaper.jpg');
+    background-image: url('../Images/naruto-concept-art-chromebook-wallpaper.jpg');
 }
 
 .card[for="c2"] {
-    background-image: url('/Images/desktop-wallpaper-madara-uchiha-susanoo-madara-perfect-susanoo.jpg');
+    background-image: url('../Images/desktop-wallpaper-madara-uchiha-susanoo-madara-perfect-susanoo.jpg');
 }
 
 .card[for="c3"] {
-    background-image: url('/Images/wp2608922.webp');
+    background-image: url('../Images/wp2608922.webp');
 }
 
 .card[for="c4"] {
-    background-image: url('/Images/hatake-kakashi-naruto-anime-4k_1664120799.jpg');
+    background-image: url('../Images/hatake-kakashi-naruto-anime-4k_1664120799.jpg');
 }
 
 .card[for="c5"] {
-    background-image: url('/Images/unnamed.jpg');
+    background-image: url('../Images/unnamed.jpg');
 }
 
 .card[for="c6"] {
-    background-image: url('/Images/itachi_uchiha_4k_hd_naruto.jpg');
+    background-image: url('../Images/itachi_uchiha_4k_hd_naruto.jpg');
 }
 
 .card[for="c7"] {
-    background-image: url('/Images/0c9d117e2ecac0459cd08c6dcf577de2.jpg');
+    background-image: url('../Images/0c9d117e2ecac0459cd08c6dcf577de2.jpg');
 }
 
 .card[for="c8"] {
-    background-image: url('/Images/nagato-pain-naruto-4k-pc-k9mgbclqtbcggpau.jpg');
+    background-image: url('../Images/nagato-pain-naruto-4k-pc-k9mgbclqtbcggpau.jpg');
 }
