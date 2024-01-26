@@ -163,6 +163,7 @@ a {
     font-weight: 900;
     animation: mtext 1.5s ease-in;
     transition: transform .5s ease-in;
+    -webkit-filter: drop-shadow(.5rem .5rem 0 white) drop-shadow(-.5rem -.5rem 0 white);
 }
 
 #background-text:hover,
